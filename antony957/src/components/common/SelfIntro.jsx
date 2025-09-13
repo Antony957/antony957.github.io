@@ -3,7 +3,7 @@ import React from "react";
 
 function SelfIntro() {
     return (
-        <div className="flex fixed w-full md:w-1/4 h-1 overflow-y-auto p-4 flex-col bg-blue-50 items-center">
+        <div className="flex w-full md:w-1/4 min-h-screen overflow-y-auto p-4 flex-col bg-blue-50 items-center md:sticky md:top-0">
             <img src="/avatar.jpg" alt={"avatar"} className={"w-24 h-24 rounded-xl mb-3 shadow-lg mt-10"}/>
             <div className={"text-xl font-bold"}>
                 Chongwen Zhao
@@ -11,9 +11,9 @@ function SelfIntro() {
             <p className="text-gray-600 text-sm italic text-center mb-16 mt-6 px-8">
                 "Driving hardcore technology toward eureka moments."
             </p>
-            <div className="fixed bottom-6 right-6 flex items-center gap-6 text-gray-700 text-2xl z-50">
+            <div className="flex items-center gap-6 text-gray-700 text-2xl mt-auto mb-4">
                 {/* Mail */}
-                <a href="mailto:example@example.com" className="hover:text-blue-500">
+                <a href="mailto:cz207@duke.edu" className="hover:text-blue-500" aria-label="Email">
                     <svg t="1756092209210" className="icon" viewBox="0 0 1024 1024" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" p-id="5618" width="20" height="20">
                         <path
@@ -24,7 +24,7 @@ function SelfIntro() {
 
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                   className="hover:text-blue-600">
+                   className="hover:text-blue-600" aria-label="LinkedIn">
                     <svg t="1756092258935" className="icon" viewBox="0 0 1024 1024" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" p-id="6596" width="20" height="20">
                         <path
@@ -35,7 +35,7 @@ function SelfIntro() {
 
                 {/* Google Scholar */}
                 <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer"
-                   className="hover:text-purple-600">
+                   className="hover:text-purple-600" aria-label="Google Scholar">
                     <svg t="1756092369110" className="icon" viewBox="0 0 1024 1024" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" p-id="19294" width="20" height="20">
                         <path
@@ -46,7 +46,7 @@ function SelfIntro() {
 
                 {/* GitHub */}
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-                   className="hover:text-gray-900">
+                   className="hover:text-gray-900" aria-label="GitHub">
                     <svg t="1756092382339" className="icon" viewBox="0 0 1024 1024" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" p-id="20267" width="20" height="20">
                         <path
