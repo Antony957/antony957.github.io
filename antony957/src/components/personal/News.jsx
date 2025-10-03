@@ -4,7 +4,6 @@ import Papa from 'papaparse';
 function News() {
     const [data, setData] = useState([]);
     const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(true);
     useEffect(()=>{
         const loadData = async () => {
             try {
@@ -32,16 +31,13 @@ function News() {
                             return cleanedRow;
                         });
                         setData(cleanedData);
-                        setLoading(false);
                     },
                     error: (error) => {
                         setError(`CSV parsing error: ${error.message}`);
-                        setLoading(false);
                     }
                 });
             } catch (err) {
                 setError(`Error loading CSV: ${err.message}`);
-                setLoading(false);
             }
         };
         loadData();
@@ -56,16 +52,6 @@ function News() {
                     <p className="text-sm text-red-500 mt-2">
                         Make sure the news.csv file is placed in the public folder of your project.
                     </p>
-                </div>
-            </div>
-        );
-    }
-
-    if (loading) {
-        return (
-            <div className="p-6 max-w-4xl mx-auto">
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                    <p className="text-blue-800">Loading news...</p>
                 </div>
             </div>
         );
