@@ -3,18 +3,18 @@ import React from "react";
 
 function SelfIntro() {
     return (
-        <div className="w-full h-full p-8 bg-blue-50 items-center flex flex-col z-10 space-y-8">
-            <img src="/avatar.jpg" alt={"avatar"} className={"w-32 h-32 !rounded-full mb-3 shadow-lg mt-10"}/>
+        <div className="w-full h-full p-8 bg-blue-50 items-center flex flex-col z-10 space-y-2">
+            <img src="/avatar.jpg" alt={"avatar"} className={"w-32 h-32 !rounded-full mb-3 shadow-lg mt-6"}/>
             <div className={"text-xl font-bold"}>
                 Chongwen Zhao
             </div>
 
-            <p className="text-gray-600 text-sm italic text-center mt-6">
+            <p className="text-gray-600 text-sm italic text-center mt-4">
                 "Driving hardcore technology<br/> toward eureka moments."
             </p>
-            <p className="text-base text-gray-700 mt-8">Master Student at Duke University</p>
+            <p className="text-base text-gray-700 mt-4">Master Student at Duke University</p>
 
-            <div className="space-y-8 mb-8 mt-8">
+            <div className="space-y-8 mb-8 mt-4">
                 <div className="flex">
                     <span className="font-semibold text-gray-800 w-24">Email:</span>
                     <span className="text-gray-600">cz207@duke.edu</span>

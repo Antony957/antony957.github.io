@@ -1,5 +1,5 @@
 import '../../output.css';
-import Navi from './Navi.jsx';
+import Navi from '../common/Navi.jsx';
 import Bio from './Bio.jsx';
 import News from "./News.jsx";
 import SelfIntro from "./SelfIntro.jsx";

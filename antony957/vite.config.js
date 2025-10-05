@@ -21,7 +21,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 'home': './index.html',
-                'EEG': './EEG.html',
+                'blogs': './blogs.html',
                 '404':'./404.html',
             }
         }
